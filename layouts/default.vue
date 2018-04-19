@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans antialiased">
+  <div class="font-sans antialiased relative">
     <Navbar/>
     <nuxt/>
   </div>

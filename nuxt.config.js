@@ -34,7 +34,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~plugins/font-awesome.js'
+    '~plugins/font-awesome'
   ],
 
   /*
@@ -50,6 +50,16 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL: 'https://test.igorserver.ru',
+    https: true
+  },
+
+  /*
+  ** Axios module configuration
+  */
+  env: {
+    // See https://github.com/nuxt-community/axios-module#options
+    API_URL: 'https://test.igorserver.ru'
   },
 
   /*
