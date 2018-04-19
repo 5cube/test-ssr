@@ -42,7 +42,8 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa'
   ],
 
   /*
@@ -58,8 +59,19 @@ module.exports = {
   ** Axios module configuration
   */
   env: {
-    // See https://github.com/nuxt-community/axios-module#options
     API_URL: 'https://test.igorserver.ru'
+  },
+
+  /*
+  ** Manifest file
+  */
+  manifest: {
+    name: 'Deliver',
+    short_name: 'Deliver',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#000000',
+    theme_color: '#009688'
   },
 
   /*
